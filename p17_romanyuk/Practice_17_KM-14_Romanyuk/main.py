@@ -50,7 +50,7 @@ def main():
     elif choose == 6:
         a = positive(input('Enter the base of logarithm : '))
         while True:
-            if a == 1:
+            if a == 1 or a == 0:
                 a = positive(input('Input is invalid. Enter the base of logarithm : '))
             else:
                 b1 = positive(input('Enter a positive number : '))
