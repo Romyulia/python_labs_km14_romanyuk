@@ -54,14 +54,29 @@ def main():
                 a = positive(input('Input is invalid. Enter the base of logarithm : '))
             else:
                 b1 = positive(input('Enter a positive number : '))
-                print('The logarithm is {}'.format(log(a, b1)))
+                while True:
+                    if b1 == 0:
+                        b1 = positive(input('Enter a positive number : '))
+                    else:
+                    print('The logarithm is {}'.format(log(a, b1)))
+                    break
                 break
     elif choose == 7:
         b2 = positive(input('Enter a positive number : '))
-        print('The natural logarithm is {}.'.format(ln(b2)))
+                while True:
+                    if b2 == 0:
+                        b2 = positive(input('Enter a positive number : '))
+                    else:
+                        print('The natural logarithm is {}.'.format(ln(b2)))
+                        break
     elif choose == 8:
         b3 = positive(input('Enter a positive number : '))
-        print('The decimal logarithm is {}.'.format(lg(b3)))
+            while True:
+                if b3 == 0:
+                    b3 = positive(input('Enter a positive number : '))
+                else:
+                    print('The decimal logarithm is {}.'.format(lg(b3)))
+                    break
     else:
         print('You enter a wrong number.')
 
